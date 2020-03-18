@@ -205,6 +205,9 @@
       "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/config/routes.rb": {
         "lines": [
           1,
+          null,
+          1,
+          1,
           1,
           1,
           1,
@@ -239,6 +242,27 @@
           1,
           1,
           null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
           null,
           null
         ]
@@ -361,6 +385,20 @@
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -372,6 +410,6 @@
         ]
       }
     },
-    "timestamp": 1584569582
+    "timestamp": 1584570239
   }
 }

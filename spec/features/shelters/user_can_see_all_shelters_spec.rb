@@ -32,33 +32,14 @@ RSpec.describe "shelters id page", type: :feature do
                         city:  "Pallet Town",
                         state: "Kanto",
                         zip: "80807")
-    shelter_2 = Shelter.create(name: "Cerulean City Center",
-                        address: "Route 5",
-                        city:  "Cerulean City",
-                        state: "Kanto",
-                        zip: "80808")
-    shelter_3 = Shelter.create(name: "Safari Zone Rescue",
-                        address: "Route 48",
-                        city:  "Fuchsia City",
-                        state: "Kanto",
-                        zip: "80809")
-    visit "/shelters/#{Shelter.first.id}"
+
+    visit "/shelters/#{shelter_1.id}"
 
     expect(page).to have_content(shelter_1.name)
     expect(page).to have_content("Address: #{shelter_1.address}")
     expect(page).to have_content("City: #{shelter_1.city}")
     expect(page).to have_content("State: #{shelter_1.state}")
     expect(page).to have_content("Zip: #{shelter_1.zip}")
-    # expect(page).to have_content(shelter_2.name)
-    # expect(page).to have_content("Address: #{shelter_2.address}")
-    # expect(page).to have_content("City: #{shelter_2.city}")
-    # expect(page).to have_content("State: #{shelter_2.state}")
-    # expect(page).to have_content("Zip: #{shelter_2.zip}")
-    # expect(page).to have_content(shelter_3.name)
-    # expect(page).to have_content("Address: #{shelter_3.address}")
-    # expect(page).to have_content("City: #{shelter_3.city}")
-    # expect(page).to have_content("State: #{shelter_3.state}")
-    # expect(page).to have_content("Zip: #{shelter_3.zip}")
   end
 end
 

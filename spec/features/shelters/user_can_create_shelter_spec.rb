@@ -17,3 +17,18 @@ RSpec.describe "shelters index page", type: :feature do
     expect(page).to have_content("Enter a zip:")
   end
 end
+
+RSpec.describe "shelters index page", :type => :request do
+  it "creates a Shelter and redirects to the Shelters index" do
+    post "/shelters", :params => {
+                        :shelter => {
+                            name: "Lavender Town Rescue",
+                            address: "Route 66",
+                            city:  "Lavender Town",
+                            state: "Kanto",
+                            zip: "80810"
+                            }
+                          }
+    expect(response).to redirect_to("/shelters")
+  end
+end

@@ -1,1 +1,14 @@
-<<h1>Form goes here</h1>
+<form action="/shelters" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <p>Enter a name:</p>
+  <input type='text' name='shelter[name]'/><br/>
+  <p>Enter an address:</p>
+  <input type='text' name='shelter[address]'/><br/>
+  <p>Enter a city:</p>
+  <input type='text' name='shelter[city]'/><br/>
+  <p>Enter a state:</p>
+  <input type='text' name='shelter[state]'/><br/>
+  <p>Enter a zip:</p>
+  <input type='text' name='shelter[zip]'/><br/>
+  <input type='submit'/>
+</form>

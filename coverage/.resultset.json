@@ -214,12 +214,55 @@
           1,
           1,
           1,
+          null,
+          1,
           null
         ]
       },
       "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/spec/features/shelters/user_can_create_shelter_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -410,10 +453,35 @@
         "lines": [
           1,
           1,
+          1,
           null
         ]
       },
       "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/models/pet.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/controllers/pets_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/controllers/application_controller.rb": {
         "lines": [
           1,
           1,
@@ -468,15 +536,8 @@
           null,
           null
         ]
-      },
-      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1584587029
+    "timestamp": 1584593841
   }
 }

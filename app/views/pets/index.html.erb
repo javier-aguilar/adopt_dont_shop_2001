@@ -1,0 +1,11 @@
+<h1>All Pets</h1>
+
+<section class = "pets">
+<% @pets.each do |pet| %>
+  <h2><%= pet.name %></h2>
+  <p><%= image_tag "pets/#{pet.image}" %></p>
+  <p>Age: <%= pet.age %></p>
+  <p>Sex: <%= pet.sex %></p>
+  <p>Shelter: <%= pet.shelter.name %></p>
+<% end %>
+</section>

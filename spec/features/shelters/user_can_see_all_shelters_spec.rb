@@ -32,6 +32,11 @@ RSpec.describe "shelters id page", type: :feature do
                         city:  "Pallet Town",
                         state: "Kanto",
                         zip: "80807")
+    shelter_2 = Shelter.create(name: "Cerulean City Center",
+                        address: "Route 5",
+                        city:  "Cerulean City",
+                        state: "Kanto",
+                        zip: "80808")
 
     visit "/shelters/#{shelter_1.id}"
 
@@ -40,6 +45,15 @@ RSpec.describe "shelters id page", type: :feature do
     expect(page).to have_content("City: #{shelter_1.city}")
     expect(page).to have_content("State: #{shelter_1.state}")
     expect(page).to have_content("Zip: #{shelter_1.zip}")
+
+    visit "/shelters/#{shelter_2.id}"
+
+    expect(page).to have_content(shelter_2.name)
+    expect(page).to have_content("Address: #{shelter_2.address}")
+    expect(page).to have_content("City: #{shelter_2.city}")
+    expect(page).to have_content("State: #{shelter_2.state}")
+    expect(page).to have_content("Zip: #{shelter_2.zip}")
+
   end
 
   it "can see link to update shelter" do

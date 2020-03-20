@@ -214,6 +214,7 @@
           1,
           1,
           1,
+          1,
           null,
           1,
           null
@@ -433,6 +434,55 @@
           null
         ]
       },
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/spec/features/shelters/user_can_see_shelter_pets_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/spec/models/shelter_spec.rb": {
         "lines": [
           1,
@@ -534,10 +584,14 @@
           1,
           null,
           null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1584644849
+    "timestamp": 1584663002
   }
 }

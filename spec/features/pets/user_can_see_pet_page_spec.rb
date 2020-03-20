@@ -13,14 +13,14 @@ RSpec.describe "As a visitor", type: :feature do
                         description: "Very gentle and loving",
                         age:  4,
                         sex: "Male",
-                        adopted: false,
+                        status: "Adoptable",
                         shelter_id: shelter_1.id)
     pet_2 = Pet.create(image: "weedle.jpg",
                         name: "Weedle",
                         description: "Weed is a loyal and affectionate friend.",
                         age:  2,
                         sex: "Male",
-                        adopted: false,
+                        status: "Pending",
                         shelter_id: shelter_1.id)
     visit "/pets/#{pet_1.id}"
 
@@ -28,7 +28,7 @@ RSpec.describe "As a visitor", type: :feature do
     expect(page).to have_content(pet_1.description)
     expect(page).to have_content(pet_1.age)
     expect(page).to have_content(pet_1.sex)
-    expect(page).to have_content(pet_1.adopted)
+    expect(page).to have_content(pet_1.status)
 
     expect(page).to have_no_content(pet_2.name)
   end

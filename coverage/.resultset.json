@@ -217,12 +217,49 @@
           1,
           null,
           1,
+          1,
           null
         ]
       },
       "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/spec/features/pets/user_can_view_pets_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -525,6 +562,11 @@
       "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/controllers/pets_controller.rb": {
         "lines": [
           1,
+          null,
+          1,
+          1,
+          null,
+          null,
           1,
           1,
           null,
@@ -592,6 +634,6 @@
         ]
       }
     },
-    "timestamp": 1584663002
+    "timestamp": 1584667464
   }
 }

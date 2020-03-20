@@ -1,0 +1,9 @@
+<section class = "pets">
+  <h1><%= @pet.name %></h1>
+
+  <p><%= image_tag "pets/#{@pet.image}" %></p>
+  <p>Description: <%= @pet.description %></p>
+  <p>Age: <%= @pet.age %></p>
+  <p>Sex: <%= @pet.sex %></p>
+  <p>Status: <%= @pet.adopted %></p>
+</section>

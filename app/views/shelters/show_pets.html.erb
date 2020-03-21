@@ -3,7 +3,7 @@
 <section class = "pets">
 <h2>Available Pokemon</h2>
   <% @shelter.pets.each do |pet| %>
-    <h2><%= pet.name %></h2>
+    <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h2>
     <p><%= image_tag "pets/#{pet.image}" %></p>
     <p>Age: <%= pet.age %></p>
     <p>Sex: <%= pet.sex %></p>

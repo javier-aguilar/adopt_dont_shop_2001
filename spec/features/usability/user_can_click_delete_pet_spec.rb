@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "As a visitor" do
-  describe "I can visit a pet show page"
-    it "can click a link to delete pet and redirected to the pet index" do
+RSpec.describe "As a visitor", type: :feature do
+  describe "when I visit the pets index or shelters pet index page"
+    it "I can see a link to delete pet, which deletes pet" do
       shelter_1 = Shelter.create(name: "Pallet Town Shelter",
                           address: "Route 1",
                           city:  "Pallet Town",
@@ -22,20 +22,33 @@ RSpec.describe "As a visitor" do
                           sex: "Male",
                           status: "Pending",
                           shelter_id: shelter_1.id)
-      visit "/pets/#{pet_1.id}"
 
-      click_link "Delete Pet"
+      visit "/pets"
 
-      expect(current_path).to eq("/pets")
+      find("#pet-#{pet_1.id}").click
 
-      expect(page).to have_no_css("img[src*=caterpie]")
+      expect(page).to have_current_path("/pets")
+
       expect(page).to have_no_content(pet_1.name)
-      expect(page).to have_no_content(pet_1.age)
-
-      expect(page).to have_css("img[src*=weedle]")
       expect(page).to have_content(pet_2.name)
-      expect(page).to have_content(pet_2.age)
-      expect(page).to have_content(pet_2.sex)
+      expect(Pet.count).to eq(1)
+
+      pet_1 = Pet.create(image: "pidgey.jpg",
+                          name: "Pidgey",
+                          description: "Very gentle and loving",
+                          age:  4,
+                          sex: "Male",
+                          status: "Adoptable",
+                          shelter_id: shelter_1.id)
+
+      visit "/shelters/#{shelter_1.id}/pets"
+
+      find("#pet-#{pet_1.id}").click
+
+      expect(page).to have_current_path("/pets")
+
+      expect(page).to have_no_content(pet_1.name)
+      expect(page).to have_content(pet_2.name)
       expect(Pet.count).to eq(1)
   end
 end

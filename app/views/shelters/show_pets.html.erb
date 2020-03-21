@@ -10,7 +10,7 @@
     <p>Description: <%= pet.description %></p>
     <p>Status: <%= pet.status %></p>
     <%= link_to "Edit", "/pets/#{pet.id}/edit" %> |
-    <%= link_to "Delete", "/pets/#{pet.id}/", method: "delete" %>
+    <%= link_to "Delete", "/pets/#{pet.id}/", method: "delete", id: "pet-#{pet.id}"%>
   <% end %>
 </section>
 <br />

@@ -14,12 +14,11 @@ RSpec.describe "As a visitor", type: :feature do
                           state: "Kanto",
                           zip: "80808")
 
-      visit "/shelters/"
+      visit "/shelters/#{shelter_1.id}"
 
       expect(page).to have_content(shelter_1.name)
-      expect(page).to have_content(shelter_2.name)
 
-      find("#shelter-#{shelter_1.id}").click
+      click_link "Delete Shelter"
 
       expect(page).to have_current_path("/shelters")
       expect(page).to have_no_content(shelter_1.name)

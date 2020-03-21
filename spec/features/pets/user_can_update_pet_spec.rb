@@ -23,18 +23,18 @@ RSpec.describe "As a visitor" do
 
     fill_in('image', :with => "caterpie.jpg")
     fill_in('name', :with => "Bubbles")
-    fill_in('description', :with => "Loves to cuddle")
+    fill_in('description', :with => "Hates to cuddle")
     fill_in('age', :with => 3)
-    fill_in('sex', :with => "Female")
+    fill_in('sex', :with => "Male")
 
     click_button "Update Pet"
 
     expect(page).to have_current_path("/pets/#{pet_1.id}")
     expect(page).to have_css("img[src*=caterpie]")
     expect(page).to have_content("Bubbles")
-    expect(page).to have_content("Loves to cuddle")
+    expect(page).to have_content("Hates to cuddle")
     expect(page).to have_content("3")
-    expect(page).to have_content("Female")
+    expect(page).to have_content("Male")
     expect(page).to have_content("Adoptable")
   end
 end

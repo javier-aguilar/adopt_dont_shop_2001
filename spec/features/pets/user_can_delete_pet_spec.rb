@@ -38,13 +38,3 @@ RSpec.describe "As a visitor" do
       expect(page).to have_content(pet_2.sex)
   end
 end
-
-# User Story 12, Pet Delete
-#
-# As a visitor
-# When I visit a pet show page
-# Then I see a link to delete the pet "Delete Pet"
-# When I click the link
-# Then a 'DELETE' request is sent to '/pets/:id',
-# the pet is deleted,
-# and I am redirected to the pet index page where I no longer see this pet

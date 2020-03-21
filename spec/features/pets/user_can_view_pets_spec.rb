@@ -7,17 +7,20 @@ RSpec.describe "pets index page", type: :feature do
                         city:  "Pallet Town",
                         state: "Kanto",
                         zip: "80807")
-
     pet_1 = Pet.create(image: "pidgey.jpg",
-                        name: "Pidgey",
-                        age:  4,
-                        sex: "Male",
-                        shelter_id: shelter_1.id)
+                      name: "Pidgey",
+                      description: "Very gentle and loving",
+                      age:  4,
+                      sex: "Male",
+                      status: "Adoptable",
+                      shelter_id: shelter_1.id)
     pet_2 = Pet.create(image: "weedle.jpg",
-                        name: "Weedle",
-                        age:  2,
-                        sex: "Male",
-                        shelter_id: shelter_1.id)
+                      name: "Weedle",
+                      description: "Weed is a loyal and affectionate friend.",
+                      age:  2,
+                      sex: "Male",
+                      status: "Pending",
+                      shelter_id: shelter_1.id)
     visit "/pets"
 
     expect(page).to have_css("img[src*=pidgey]")

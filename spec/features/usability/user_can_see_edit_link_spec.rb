@@ -8,10 +8,9 @@ RSpec.describe "As a visitor", type: :feature do
                           city:  "Pallet Town",
                           state: "Kanto",
                           zip: "80807")
+      visit "/shelters"
 
-      visit "/shelters/#{shelter_1.id}"
-
-      click_link "Update Shelter"
+      click_link "Edit"
 
       expect(page).to have_current_path("/shelters/#{shelter_1.id}/edit")
 

@@ -668,7 +668,7 @@
           null
         ]
       },
-      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/spec/features/usability/user_can_see_edit_link_spec.rb": {
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/spec/features/usability/user_can_see_delete_link_spec.rb": {
         "lines": [
           1,
           null,
@@ -677,6 +677,38 @@
           1,
           1,
           null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/spec/features/usability/user_can_see_edit_link_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -763,7 +795,7 @@
         "lines": [
           1,
           1,
-          7,
+          10,
           null,
           null,
           1,
@@ -779,7 +811,7 @@
           null,
           null,
           1,
-          5,
+          4,
           null,
           null,
           1,
@@ -800,8 +832,8 @@
           null,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
           null,
           1,
@@ -881,6 +913,6 @@
         ]
       }
     },
-    "timestamp": 1584813659
+    "timestamp": 1584814104
   }
 }

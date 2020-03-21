@@ -7,5 +7,9 @@
     <p><%= image_tag "pets/#{pet.image}" %></p>
     <p>Age: <%= pet.age %></p>
     <p>Sex: <%= pet.sex %></p>
+    <p>Description: <%= pet.description %></p>
+    <p>Status: <%= pet.status %></p>
   <% end %>
 </section>
+
+<%= link_to "Create Pet", "/shelters/#{@shelter.id}/pets/new" %>

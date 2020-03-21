@@ -13,7 +13,6 @@ class SheltersController < ApplicationController
     })
     shelter.save
     redirect_to '/shelters'
-
   end
 
   def show

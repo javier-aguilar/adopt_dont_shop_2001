@@ -9,7 +9,9 @@
     <p>Sex: <%= pet.sex %></p>
     <p>Description: <%= pet.description %></p>
     <p>Status: <%= pet.status %></p>
+    <%= link_to "Edit", "/pets/#{pet.id}/edit" %> |
+    <%= link_to "Delete", "/pets/#{pet.id}/", method: "delete" %>
   <% end %>
 </section>
-
+<br />
 <%= link_to "Create Pet", "/shelters/#{@shelter.id}/pets/new" %>

@@ -24,6 +24,7 @@ RSpec.describe "As a visitor", type: :feature do
                         shelter_id: shelter_1.id)
     visit "/pets/#{pet_1.id}"
 
+    expect(page).to have_css("img[src*=pidgey]")
     expect(page).to have_content(pet_1.name)
     expect(page).to have_content(pet_1.description)
     expect(page).to have_content(pet_1.age)

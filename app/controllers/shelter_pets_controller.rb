@@ -35,7 +35,7 @@ class ShelterPetsController < ApplicationController
   private
 
   def save_pet_image(image)
-    File.open(Rails.root.join(Rails.root + 'app/assets/images/pets', image.original_filename), 'wb') do |file|
+    File.open(Rails.root.join(Rails.root + '/assets/images/pets', image.original_filename), 'wb') do |file|
       file.write(image.read)
     end
   end

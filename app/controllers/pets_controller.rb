@@ -8,7 +8,6 @@ class PetsController < ApplicationController
     else
       @pets = Pet.all
     end
-
   end
 
   def show

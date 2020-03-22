@@ -368,6 +368,91 @@
           null
         ]
       },
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/spec/features/extensions/user_can_sort_shelters_alphabetically_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/spec/features/extensions/user_can_sort_shelters_by_adoptable_pets_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/spec/features/pets/user_can_create_pet_spec.rb": {
         "lines": [
           1,
@@ -1149,7 +1234,7 @@
           1,
           1,
           1,
-          82,
+          86,
           null
         ]
       },
@@ -1198,7 +1283,6 @@
           0,
           null,
           9,
-          null,
           null,
           null,
           null,
@@ -1316,7 +1400,14 @@
         "lines": [
           1,
           1,
-          12,
+          16,
+          1,
+          null,
+          15,
+          1,
+          null,
+          14,
+          null,
           null,
           null,
           1,
@@ -1361,6 +1452,6 @@
         ]
       }
     },
-    "timestamp": 1584898344
+    "timestamp": 1584902372
   }
 }

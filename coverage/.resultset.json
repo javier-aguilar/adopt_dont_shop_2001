@@ -207,15 +207,6 @@
           1,
           null,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
           null,
           1,
           1,
@@ -225,12 +216,70 @@
           1,
           1,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
           null
         ]
       },
       "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/spec/features/extensions/user_can_see_count_of_pets_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -1100,7 +1149,7 @@
           1,
           1,
           1,
-          74,
+          82,
           null
         ]
       },
@@ -1138,36 +1187,6 @@
           null
         ]
       },
-      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/controllers/shelter_pets_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          13,
-          1,
-          12,
-          1,
-          null,
-          11,
-          null,
-          13,
-          13,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/controllers/pets_controller.rb": {
         "lines": [
           1,
@@ -1184,7 +1203,15 @@
           null,
           null,
           1,
-          6,
+          10,
+          10,
+          10,
+          8,
+          8,
+          null,
+          2,
+          2,
+          null,
           null,
           null,
           1,
@@ -1217,6 +1244,24 @@
           null,
           null,
           null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
           null,
           null,
           1,
@@ -1232,6 +1277,36 @@
           null,
           1,
           0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/app/controllers/shelter_pets_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          13,
+          1,
+          12,
+          1,
+          null,
+          11,
+          null,
+          13,
+          13,
           null,
           null,
           null
@@ -1286,6 +1361,6 @@
         ]
       }
     },
-    "timestamp": 1584856063
+    "timestamp": 1584898090
   }
 }

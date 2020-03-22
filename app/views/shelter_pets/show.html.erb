@@ -16,8 +16,6 @@
       <p><%= pet.age %> Years (Approx.)</p>
       <p>Sex:</p>
       <p><%= pet.sex %></p>
-      <p>Status:</p>
-      <p><%= pet.status %></p>
       <%= link_to "Edit", "/pets/#{pet.id}/edit", class: "button" %>
       <%= link_to "Delete", "/pets/#{pet.id}/", method: "delete", id: "pet-#{pet.id}", class: "button delete" %>
     </section>

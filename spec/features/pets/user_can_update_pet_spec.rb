@@ -8,7 +8,7 @@ RSpec.describe "As a visitor" do
                         city:  "Pallet Town",
                         state: "Kanto",
                         zip: "80807")
-    pet_1 = Pet.create(image: "pidgey.jpg",
+    pet_1 = Pet.create(image: "https://img.pokemondb.net/artwork/large/pidgey.jpg",
                         name: "Pidgey",
                         description: "Very gentle and loving",
                         approx_age:  4,
@@ -21,7 +21,7 @@ RSpec.describe "As a visitor" do
 
     expect(page).to have_current_path("/pets/#{pet_1.id}/edit")
 
-    fill_in('image', :with => "caterpie.jpg")
+    fill_in('image', :with => "https://img.pokemondb.net/artwork/large/caterpie.jpg")
     fill_in('name', :with => "Bubbles")
     fill_in('description', :with => "Hates to cuddle")
     fill_in('approx_age', :with => 3)

@@ -110,6 +110,21 @@
   margin: 20px;
  }
 
+ .pet-info-view {
+   width: 25%;
+   text-align: center;
+   padding: 20px;
+   margin-top: 20px;
+   margin-right: 20px;
+   border-radius: 3px;
+   box-shadow: 1px 3px 7px 1px rgba(0,0,0,.13);
+   background-color: #ffffff;
+ }
+
+ .pet-info-view img{
+   height: 200px;
+ }
+
  .pet-info {
     width: 25%;
     text-align: center;
@@ -119,7 +134,7 @@
     border-radius: 3px;
     box-shadow: 1px 3px 7px 1px rgba(0,0,0,.13);
     background-color: #ffffff;
-    min-height: 630px;
+    min-height: 575px;
   }
 
   .pet-info p{

@@ -28,13 +28,7 @@ class PetsController < ApplicationController
 
   def update
     pet = Pet.find(params[:id])
-    pet.update({
-      image: params[:image],
-      name: params[:name],
-      approx_age: params[:approx_age],
-      description: params[:description],
-      sex: params[:sex],
-    })
+    pet.update(pet_params)
     pet.save
     redirect_to "/pets/#{pet.id}"
   end
@@ -65,7 +59,7 @@ class PetsController < ApplicationController
   private
 
   def pet_params
-    params.permit(:image, :name, :age, :description, :sex)
+    params.permit(:image, :name, :approx_age, :description, :sex)
   end
 
 end

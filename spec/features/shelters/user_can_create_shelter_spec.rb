@@ -9,11 +9,11 @@ RSpec.describe "As a visitor", type: :feature do
 
       expect(page).to have_current_path("/shelters/new")
 
-      fill_in('shelter[name]', :with => "Lavender Town Rescue")
-      fill_in('shelter[address]', :with => "Route 66")
-      fill_in('shelter[city]', :with => "Lavender Town")
-      fill_in('shelter[state]', :with => "Kanto")
-      fill_in('shelter[zip]', :with => "80810")
+      fill_in('name', :with => "Lavender Town Rescue")
+      fill_in('address', :with => "Route 66")
+      fill_in('city', :with => "Lavender Town")
+      fill_in('state', :with => "Kanto")
+      fill_in('zip', :with => "80810")
 
       click_button('Create Shelter')
 

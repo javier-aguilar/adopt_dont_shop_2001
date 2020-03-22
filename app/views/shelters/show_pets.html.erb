@@ -1,17 +1,27 @@
-<h1><%= @shelter.name %></h1>
+<section class = "info">
 
-<section class = "pets">
-<h2>Available Pokemon</h2>
-  <% @shelter.pets.each do |pet| %>
-    <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h2>
-    <p><%= image_tag "pets/#{pet.image}" %></p>
-    <p>Age: <%= pet.age %></p>
-    <p>Sex: <%= pet.sex %></p>
-    <p>Description: <%= pet.description %></p>
-    <p>Status: <%= pet.status %></p>
-    <%= link_to "Edit", "/pets/#{pet.id}/edit" %> |
-    <%= link_to "Delete", "/pets/#{pet.id}/", method: "delete", id: "pet-#{pet.id}"%>
-  <% end %>
+  <h1><%= @shelter.name %></h1>
+
+  <h2>Available Pokemon</h2>
+
+  <section class = "all-pets">
+    <% @shelter.pets.each do |pet| %>
+    <section class = "pet-info">
+      <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h2>
+      <%= image_tag "pets/#{pet.image}" %>
+      <p>Age:</p>
+      <p><%= pet.age %> Years (Approx.)</p>
+      <p>Sex:</p>
+      <p><%= pet.sex %></p>
+      <p>Description:</p>
+      <p><%= pet.description %></p>
+      <p>Status:</p>
+      <p><%= pet.status %></p>
+      <%= link_to "Edit", "/pets/#{pet.id}/edit", class: "button" %>
+      <%= link_to "Delete", "/pets/#{pet.id}/", method: "delete", id: "pet-#{pet.id}", class: "button delete" %>
+    </section>
+    <% end %>
+  </section>
+  <br />
+  <%= link_to "Create Pet", "/shelters/#{@shelter.id}/pets/new" %>
 </section>
-<br />
-<%= link_to "Create Pet", "/shelters/#{@shelter.id}/pets/new" %>

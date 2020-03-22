@@ -15,11 +15,11 @@ RSpec.describe "As a visitor", type: :feature do
 
       expect(current_path).to eq("/shelters/#{shelter_1.id}/edit")
 
-      fill_in('shelter[name]', :with => "Pallet Town Poke Home")
-      fill_in('shelter[address]', :with => "Route 22")
-      fill_in('shelter[city]', :with => "Eterna City")
-      fill_in('shelter[state]', :with => "Sinnoh")
-      fill_in('shelter[zip]', :with => "80899")
+      fill_in('name', :with => "Pallet Town Poke Home")
+      fill_in('address', :with => "Route 22")
+      fill_in('city', :with => "Eterna City")
+      fill_in('state', :with => "Sinnoh")
+      fill_in('zip', :with => "80899")
 
       click_button "Create Shelter"
 

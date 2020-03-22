@@ -14,10 +14,10 @@ RSpec.describe "As a visitor", type: :feature do
 
       expect(page).to have_current_path("/shelters/#{shelter_1.id}/edit")
 
-      expect(page).to have_field("shelter[name]", :with => "#{shelter_1.name}")
-      expect(page).to have_field("shelter[address]", :with => "#{shelter_1.address}")
-      expect(page).to have_field("shelter[city]", :with => "#{shelter_1.city}")
-      expect(page).to have_field("shelter[state]", :with => "#{shelter_1.state}")
-      expect(page).to have_field("shelter[zip]", :with => "#{shelter_1.zip}")
+      expect(page).to have_field("name", :with => "#{shelter_1.name}")
+      expect(page).to have_field("address", :with => "#{shelter_1.address}")
+      expect(page).to have_field("city", :with => "#{shelter_1.city}")
+      expect(page).to have_field("state", :with => "#{shelter_1.state}")
+      expect(page).to have_field("zip", :with => "#{shelter_1.zip}")
   end
 end

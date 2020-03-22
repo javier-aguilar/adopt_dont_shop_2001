@@ -1,13 +1,22 @@
-<h1>All Pets</h1>
+<section class = "info">
 
-<section class = "pets">
-<% @pets.each do |pet| %>
-  <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h2>
-  <p><%= image_tag "pets/#{pet.image}" %></p>
-  <p>Age: <%= pet.age %></p>
-  <p>Sex: <%= pet.sex %></p>
-  <p>Shelter: <%= pet.shelter.name %></p>
-  <%= link_to "Edit", "/pets/#{pet.id}/edit" %> |
-  <%= link_to "Delete", "/pets/#{pet.id}/", method: "delete", id: "pet-#{pet.id}"%>
-<% end %>
+  <h1>All Pets</h1>
+
+  <section class = "all-pets">
+    <% @pets.each do |pet| %>
+    <section class = "pet-info">
+      <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h2>
+      <%= image_tag "pets/#{pet.image}" %>
+      <p>Age:</p>
+      <p><%= pet.age %> Years (Approx.)</p>
+      <p>Sex: </p>
+      <p><%= pet.sex %></p>
+      <p>Shelter:
+      <p><%= link_to "#{pet.shelter.name}", "/shelters/#{pet.shelter.id}" %></p>
+      <%= link_to "Edit", "/pets/#{pet.id}/edit", class: "button" %>
+      <%= link_to "Delete", "/pets/#{pet.id}/", method: "delete", id: "pet-#{pet.id}", class: "button delete" %>
+    </section>
+    <% end %>
+  </section>
+
 </section>

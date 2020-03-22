@@ -1,7 +1,14 @@
 class PetsController < ApplicationController
 
   def index
-    @pets = Pet.all
+    if(params["adoptable"] == "true")
+      @pets = Pet.where(:status => "Adoptable")
+    elsif(params["adoptable"] == "false")
+      @pets = Pet.where(:status => "Pending")
+    else
+      @pets = Pet.all
+    end
+
   end
 
   def show

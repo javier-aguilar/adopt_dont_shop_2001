@@ -2,6 +2,9 @@
 
   <h1>All Pets</h1>
 
+  <%= link_to "Show All", "pets" %> |
+  <%= link_to "Show Adoptable", "?adoptable=true" %> |
+  <%= link_to "Show Pending", "?adoptable=false" %>
   <section class = "all-pets">
     <% @pets.each do |pet| %>
     <section class = "pet-info">

@@ -1,22 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe Pet, type: :model do
-  describe 'validations' do
-    it {should validate_presence_of :image}
-    it {should validate_presence_of :name}
-    it {should validate_presence_of :age}
-    it {should validate_presence_of :sex}
-    it {should validate_presence_of :description}
-    it {should validate_presence_of :status}
-    it {should validate_presence_of :shelter_id}
-  end
-
-  describe 'relationships' do
-    it {should belong_to :shelter}
-  end
-
-  describe 'default scope' do
-    it 'orders by ascending name' do
+RSpec.describe "As a visitor", type: :feature do
+  describe "when I visit a shelter pets index page"
+    it "I can see a count of the number of pets at the shelter" do
       shelter_1 = Shelter.create(name: "Pallet Town Shelter",
                           address: "Route 1",
                           city:  "Pallet Town",
@@ -36,8 +22,12 @@ RSpec.describe Pet, type: :model do
                           sex: "Male",
                           status: "Adoptable",
                           shelter_id: shelter_1.id)
-      expect(Pet.all).to eq [pet_2, pet_1]
-    end
-end
 
+      visit "/shelters/#{shelter_1.id}/pets"
+
+      within '.all-pets' do
+        expect(page.all('.pet-info')[0]).to have_content("#{pet_2.name}")
+        expect(page.all('.pet-info')[1]).to have_content("#{pet_1.name}")
+      end
+    end
 end

@@ -233,6 +233,43 @@
           null
         ]
       },
+      "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/spec/features/extensions/user_can_see_pets_sorted_by_status_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/pippo/turing/2module/projects/adopt_dont_shop_2001/spec/features/pets/user_can_create_pet_spec.rb": {
         "lines": [
           1,
@@ -980,6 +1017,32 @@
           1,
           2,
           null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -988,6 +1051,7 @@
           1,
           1,
           1,
+          99,
           null
         ]
       },
@@ -1071,8 +1135,8 @@
           null,
           null,
           1,
-          9,
-          9,
+          10,
+          10,
           null,
           null,
           null
@@ -1152,6 +1216,6 @@
         ]
       }
     },
-    "timestamp": 1584847052
+    "timestamp": 1584851930
   }
 }

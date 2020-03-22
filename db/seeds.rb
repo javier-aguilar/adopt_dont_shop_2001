@@ -43,3 +43,12 @@ pet_3 = Pet.create(image: "chansey.jpg",
                     sex: "Female",
                     status: "Adoptable",
                     shelter_id: shelter_3.id)
+
+
+pet_4 = Pet.create(image: "horsea.jpg",
+                    name: "Horsea",
+                    description: "Shy",
+                    approx_age:  6,
+                    sex: "Male",
+                    status: "Adoptable",
+                    shelter_id: shelter_2.id)

@@ -2,9 +2,8 @@
 
   <h1><%= @shelter.name %></h1>
 
-  <h2>Available Pokemon</h2>
-
-  <section class = "all-pets">
+  <h2>Available Pokemon (<%= @pet_num %>)</h2>
+    <section class = "all-pets">
     <% @shelter.pets.each do |pet| %>
     <section class = "pet-info">
       <h2><%= link_to "#{pet.name}", "/pets/#{pet.id}" %></h2>

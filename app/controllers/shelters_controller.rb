@@ -42,6 +42,7 @@ class SheltersController < ApplicationController
   end
 
   def show_pets
+    @pet_num = Pet.where(:shelter_id => params[:id]).count
     @shelter = Shelter.find(params[:id])
   end
 

@@ -34,7 +34,6 @@ RSpec.describe "As a visitor", type: :feature do
       expect(page).to have_no_content("#{pet_1.name}")
       expect(page).to have_content("#{pet_2.name}")
 
-
       visit "/pets/"
 
       click_link "Show Adoptable"

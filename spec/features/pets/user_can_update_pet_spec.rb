@@ -11,7 +11,7 @@ RSpec.describe "As a visitor" do
     pet_1 = Pet.create(image: "pidgey.jpg",
                         name: "Pidgey",
                         description: "Very gentle and loving",
-                        age:  4,
+                        approx_age:  4,
                         sex: "Male",
                         status: "Adoptable",
                         shelter_id: shelter_1.id)
@@ -24,7 +24,7 @@ RSpec.describe "As a visitor" do
     fill_in('image', :with => "caterpie.jpg")
     fill_in('name', :with => "Bubbles")
     fill_in('description', :with => "Hates to cuddle")
-    fill_in('age', :with => 3)
+    fill_in('approx_age', :with => 3)
     fill_in('sex', :with => "Male")
 
     click_button "Update Pet"

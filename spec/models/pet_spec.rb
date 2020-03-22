@@ -4,7 +4,7 @@ RSpec.describe Pet, type: :model do
   describe 'validations' do
     it {should validate_presence_of :image}
     it {should validate_presence_of :name}
-    it {should validate_presence_of :age}
+    it {should validate_presence_of :approx_age}
     it {should validate_presence_of :sex}
     it {should validate_presence_of :description}
     it {should validate_presence_of :status}
@@ -25,14 +25,14 @@ RSpec.describe Pet, type: :model do
       pet_1 = Pet.create(image: "pidgey.jpg",
                           name: "Pidgey",
                           description: "Very gentle and loving",
-                          age:  4,
+                          approx_age:  4,
                           sex: "Male",
                           status: "Pending",
                           shelter_id: shelter_1.id)
       pet_2 = Pet.create(image: "weedle.jpg",
                           name: "Weedle",
                           description: "Weed is a loyal and affectionate friend.",
-                          age:  2,
+                          approx_age:  2,
                           sex: "Male",
                           status: "Adoptable",
                           shelter_id: shelter_1.id)

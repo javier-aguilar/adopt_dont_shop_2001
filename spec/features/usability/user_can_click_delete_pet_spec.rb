@@ -11,14 +11,14 @@ RSpec.describe "As a visitor", type: :feature do
       pet_1 = Pet.create(image: "pidgey.jpg",
                           name: "Pidgey",
                           description: "Very gentle and loving",
-                          age:  4,
+                          approx_age:  4,
                           sex: "Male",
                           status: "Adoptable",
                           shelter_id: shelter_1.id)
       pet_2 = Pet.create(image: "weedle.jpg",
                           name: "Weedle",
                           description: "Weed is a loyal and affectionate friend.",
-                          age:  2,
+                          approx_age:  2,
                           sex: "Male",
                           status: "Pending",
                           shelter_id: shelter_1.id)
@@ -36,7 +36,7 @@ RSpec.describe "As a visitor", type: :feature do
       pet_1 = Pet.create(image: "pidgey.jpg",
                           name: "Pidgey",
                           description: "Very gentle and loving",
-                          age:  4,
+                          approx_age:  4,
                           sex: "Male",
                           status: "Adoptable",
                           shelter_id: shelter_1.id)

@@ -31,7 +31,7 @@ class PetsController < ApplicationController
     pet.update({
       image: params[:image],
       name: params[:name],
-      age: params[:age],
+      approx_age: params[:approx_age],
       description: params[:description],
       sex: params[:sex],
     })

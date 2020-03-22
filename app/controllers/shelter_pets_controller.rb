@@ -9,7 +9,7 @@ class ShelterPetsController < ApplicationController
     pet = Pet.new({
       image: params[:image],
       name: params[:name],
-      age: params[:age],
+      approx_age: params[:age],
       description: params[:description],
       sex: params[:sex],
       status: "Adoptable",
@@ -18,7 +18,7 @@ class ShelterPetsController < ApplicationController
     pet.save
     redirect_to "/shelters/#{shelter_id}/pets"
   end
-  
+
   def show
     if(params["adoptable"] == "true")
       @pets = Pet.where(:shelter_id => params[:id], :status => "Adoptable")

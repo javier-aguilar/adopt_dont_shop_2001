@@ -11,7 +11,7 @@ RSpec.describe "As a visitor", type: :feature do
       pet_1 = Pet.create(image: "pidgey.jpg",
                           name: "Pidgey",
                           description: "Very gentle and loving",
-                          age:  4,
+                          approx_age:  4,
                           sex: "Male",
                           status: "Adoptable",
                           shelter_id: shelter_1.id)
@@ -24,7 +24,7 @@ RSpec.describe "As a visitor", type: :feature do
       expect(page).to have_field("image")
       expect(page).to have_field("name")
       expect(page).to have_field("description")
-      expect(page).to have_field("age")
+      expect(page).to have_field("approx_age")
       expect(page).to have_field("sex")
 
       visit "/shelters/#{shelter_1.id}/pets"
@@ -36,7 +36,7 @@ RSpec.describe "As a visitor", type: :feature do
       expect(page).to have_field("image")
       expect(page).to have_field("name")
       expect(page).to have_field("description")
-      expect(page).to have_field("age")
+      expect(page).to have_field("approx_age")
       expect(page).to have_field("sex")
   end
 end

@@ -11,14 +11,14 @@ RSpec.describe "As a visitor" do
       pet_1 = Pet.create(image: "pidgey.jpg",
                           name: "Pidgey",
                           description: "Very gentle and loving",
-                          age:  4,
+                          approx_age:  4,
                           sex: "Male",
                           status: "Adoptable",
                           shelter_id: shelter_1.id)
       pet_2 = Pet.create(image: "weedle.jpg",
                           name: "Weedle",
                           description: "Weed is a loyal and affectionate friend.",
-                          age:  2,
+                          approx_age:  2,
                           sex: "Male",
                           status: "Pending",
                           shelter_id: shelter_1.id)
@@ -30,11 +30,11 @@ RSpec.describe "As a visitor" do
 
       expect(page).to have_no_css("img[src*=caterpie]")
       expect(page).to have_no_content(pet_1.name)
-      expect(page).to have_no_content(pet_1.age)
+      expect(page).to have_no_content(pet_1.approx_age)
 
       expect(page).to have_css("img[src*=weedle]")
       expect(page).to have_content(pet_2.name)
-      expect(page).to have_content(pet_2.age)
+      expect(page).to have_content(pet_2.approx_age)
       expect(page).to have_content(pet_2.sex)
       expect(Pet.count).to eq(1)
   end

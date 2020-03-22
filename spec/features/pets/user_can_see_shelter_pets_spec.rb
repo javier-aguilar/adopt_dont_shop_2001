@@ -16,21 +16,21 @@ RSpec.describe "As a visitor", type: :feature do
       pet_1 = Pet.create(image: "pidgey.jpg",
                           name: "Pidgey",
                           description: "Very gentle and loving",
-                          age:  4,
+                          approx_age:  4,
                           sex: "Male",
                           status: "Adoptable",
                           shelter_id: shelter_1.id)
       pet_2 = Pet.create(image: "weedle.jpg",
                           name: "Weedle",
                           description: "Weed is a loyal and affectionate friend.",
-                          age:  2,
+                          approx_age:  2,
                           sex: "Male",
                           status: "Pending",
                           shelter_id: shelter_1.id)
       pet_3 = Pet.create(image: "chansey.jpg",
                           name: "Chansey",
                           description: "Can be aggressive",
-                          age:  5,
+                          approx_age:  5,
                           sex: "Female",
                           status: "Adoptable",
                           shelter_id: shelter_2.id)
@@ -39,22 +39,22 @@ RSpec.describe "As a visitor", type: :feature do
 
       expect(page).to have_css("img[src*=pidgey]")
       expect(page).to have_content(pet_1.name)
-      expect(page).to have_content(pet_1.age)
+      expect(page).to have_content(pet_1.approx_age)
       expect(page).to have_content(pet_1.sex)
       expect(page).to have_css("img[src*=weedle]")
       expect(page).to have_content(pet_2.name)
-      expect(page).to have_content(pet_2.age)
+      expect(page).to have_content(pet_2.approx_age)
       expect(page).to have_content(pet_2.sex)
       expect(page).to have_no_css("img[src*=chansey]")
       expect(page).to have_no_content(pet_3.name)
-      expect(page).to have_no_content(pet_3.age)
+      expect(page).to have_no_content(pet_3.approx_age)
       expect(page).to have_no_content(pet_3.sex)
 
       visit "/shelters/#{shelter_2.id}/pets"
 
       expect(page).to have_css("img[src*=chansey]")
       expect(page).to have_content(pet_3.name)
-      expect(page).to have_content(pet_3.age)
+      expect(page).to have_content(pet_3.approx_age)
       expect(page).to have_content(pet_3.sex)
     end
 end

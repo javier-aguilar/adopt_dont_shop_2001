@@ -11,7 +11,7 @@ RSpec.describe "As a visitor", type: :feature do
       pet_1 = Pet.create(image: "pidgey.jpg",
                           name: "Pidgey",
                           description: "Very gentle and loving",
-                          age:  4,
+                          approx_age:  4,
                           sex: "Male",
                           status: "Adoptable",
                           shelter_id: shelter_1.id)

@@ -44,8 +44,7 @@ pet_3 = Pet.create(image: "https://img.pokemondb.net/artwork/large/chansey.jpg",
                     status: "Adoptable",
                     shelter_id: shelter_3.id)
 
-
-pet_4 = Pet.create(image: "horsea.jpg",
+pet_4 = Pet.create(image: "https://img.pokemondb.net/artwork/large/horsea.jpg",
                     name: "Horsea",
                     description: "Shy",
                     approx_age:  6,

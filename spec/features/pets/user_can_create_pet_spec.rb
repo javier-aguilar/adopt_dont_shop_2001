@@ -18,7 +18,7 @@ RSpec.describe "As a visitor" do
       fill_in('image', :with => "caterpie.jpg")
       fill_in('name', :with => "Caterpie")
       fill_in('description', :with => "Loves to cuddle")
-      fill_in('age', :with => 3)
+      fill_in('approx_age', :with => 3)
       select("Female", :from => "sex")
 
 

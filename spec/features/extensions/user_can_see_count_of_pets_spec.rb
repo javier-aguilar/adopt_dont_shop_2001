@@ -37,6 +37,6 @@ RSpec.describe "As a visitor", type: :feature do
 
       visit "/shelters/#{shelter_1.id}/pets"
 
-      expect(page).to have_content("Available Pokemon (2)")
+      expect(page).to have_content("Pokemon (2)")
     end
 end

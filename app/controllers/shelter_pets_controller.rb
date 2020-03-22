@@ -1,16 +1,6 @@
 class ShelterPetsController < ApplicationController
 
-  def new
-    @shelter = Shelter.find(params[:id])
-  end
-
-  def create
-    shelter = Shelter.find(params[:id])
-    shelter.pets.create(shelter_pet_params)
-    redirect_to "/shelters/#{shelter.id}/pets"
-  end
-
-  def show
+  def index
     if(params["adoptable"] == "true")
       @pets = Pet.where(:shelter_id => params[:id], :status => "Adoptable")
     elsif(params["adoptable"] == "false")
@@ -20,6 +10,16 @@ class ShelterPetsController < ApplicationController
     end
     @pet_num = @pets.size
     @shelter = Shelter.find(params[:id])
+  end
+
+  def new
+    @shelter = Shelter.find(params[:id])
+  end
+
+  def create
+    shelter = Shelter.find(params[:id])
+    shelter.pets.create(shelter_pet_params)
+    redirect_to "/shelters/#{shelter.id}/pets"
   end
 
   private

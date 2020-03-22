@@ -17,21 +17,27 @@ class ShelterPetsController < ApplicationController
   end
 
   def create
-    shelter = Shelter.find(params[:id])
-    shelter.pets.create(shelter_pet_params)
-    redirect_to "/shelters/#{shelter.id}/pets"
+    shelter_id = params[:id]
+    save_pet_image(params[:image])
+    pet = Pet.new({
+      image: params[:image].original_filename,
+      name: params[:name],
+      approx_age: params[:approx_age],
+      description: params[:description],
+      sex: params[:sex],
+      status: "Adoptable",
+      shelter_id: shelter_id,
+    })
+    pet.save
+    redirect_to "/shelters/#{shelter_id}/pets"
   end
 
   private
 
-  def shelter_pet_params
-    params[:status] = "Adoptable"
-    params.permit(:image,
-                  :name,
-                  :description,
-                  :approx_age,
-                  :sex,
-                  :status)
+  def save_pet_image(image)
+    File.open(Rails.root.join('app/assets/images/pets', image.original_filename), 'wb') do |file|
+      file.write(image.read)
+    end
   end
 
 end

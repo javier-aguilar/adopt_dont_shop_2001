@@ -1,5 +1,5 @@
 class SheltersController < ApplicationController
-  
+
   def index
     if(params["sort"] == "adoptable")
       @shelters = Shelter.joins(:pets).where("pets.status" == "Adoptable").group("shelters.id").order("count(pets.status) DESC")

@@ -15,12 +15,12 @@ RSpec.describe "As a visitor" do
 
       expect(current_path).to eq("/shelters/#{shelter_1.id}/pets/new")
 
-      fill_in('image', :with => "caterpie.jpg")
+      # fill_in('image', :with => "caterpie.jpg")
+      attach_file('image', Rails.root + 'app/assets/images/pets/caterpie.jpg')
       fill_in('name', :with => "Caterpie")
       fill_in('description', :with => "Loves to cuddle")
       fill_in('approx_age', :with => 3)
       select("Female", :from => "sex")
-
 
       click_button "Create Pet"
       # Then a `POST` request is sent to '/shelters/:shelter_id/pets',

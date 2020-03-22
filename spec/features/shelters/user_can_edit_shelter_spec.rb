@@ -21,7 +21,7 @@ RSpec.describe "As a visitor", type: :feature do
       fill_in('state', :with => "Sinnoh")
       fill_in('zip', :with => "80899")
 
-      click_button "Create Shelter"
+      click_button "Update Shelter"
 
       expect(page).to have_current_path("/shelters/#{shelter_1.id}")
       expect(page).to have_content("Pallet Town Poke Home")

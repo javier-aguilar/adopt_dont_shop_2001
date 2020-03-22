@@ -17,7 +17,7 @@ RSpec.describe "As a visitor" do
                         shelter_id: shelter_1.id)
     visit "/pets/#{pet_1.id}"
 
-    click_link "Update Pet"
+    click_link "Edit"
 
     expect(page).to have_current_path("/pets/#{pet_1.id}/edit")
 
@@ -38,6 +38,4 @@ RSpec.describe "As a visitor" do
     expect(page).to have_content("Adoptable")
   end
 end
-
-
 

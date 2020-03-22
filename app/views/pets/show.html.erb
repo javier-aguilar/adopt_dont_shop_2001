@@ -10,8 +10,8 @@
       <p>Status: <%= @pet.status %></p>
 
       <%= link_to @status_link[:name], "#{@status_link[:path]}", method: "patch"  %> |
-      <%= link_to "Update Pet", "/pets/#{@pet.id}/edit" %> |
-      <%= link_to "Delete Pet", "/pets/#{@pet.id}/", method: "delete"%>
+      <%= link_to "Edit", "/pets/#{@pet.id}/edit" %> |
+      <%= link_to "Delete", "/pets/#{@pet.id}/", method: "delete"%>
     </section>
   </section>
 </section>

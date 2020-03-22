@@ -15,7 +15,7 @@
     <%= text_field_tag :age %>
     <br />
     <%= label_tag "sex" %>
-    <%= text_field_tag :sex %>
+    <%= select_tag :sex, raw("<option>Female</option> <option>Male</option>") %>
     <br />
     <%= submit_tag "Create Pet"%>
   <% end %>

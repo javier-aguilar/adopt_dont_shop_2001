@@ -19,7 +19,8 @@ RSpec.describe "As a visitor" do
       fill_in('name', :with => "Caterpie")
       fill_in('description', :with => "Loves to cuddle")
       fill_in('age', :with => 3)
-      fill_in('sex', :with => "Female")
+      select("Female", :from => "sex")
+
 
       click_button "Create Pet"
       # Then a `POST` request is sent to '/shelters/:shelter_id/pets',
@@ -27,7 +28,6 @@ RSpec.describe "As a visitor" do
 
       expect(page).to have_css("img[src*=caterpie]")
       expect(page).to have_content("Caterpie")
-      expect(page).to have_content("Loves to cuddle")
       expect(page).to have_content("3")
       expect(page).to have_content("Female")
       expect(page).to have_content("Adoptable")

@@ -24,7 +24,7 @@ RSpec.describe "As a visitor" do
                           shelter_id: shelter_1.id)
       visit "/pets/#{pet_1.id}"
 
-      click_link "Delete Pet"
+      click_link "Delete"
 
       expect(current_path).to eq("/pets")
 

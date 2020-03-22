@@ -18,7 +18,7 @@ RSpec.describe "As a visitor", type: :feature do
 
       visit "/shelters/#{shelter_1.id}"
 
-      click_link "View pets"
+      click_link "View Pets"
 
       expect(page).to have_current_path("/shelters/#{shelter_1.id}/pets")
 
